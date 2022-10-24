@@ -6,8 +6,8 @@ import './Graphic.css'
 
 const headerProps = {
     icon: 'list',
-    title: 'Gráfico',
-    subtitle: 'Gráfico com o número de usuários e a meta a ser alcançada!'
+    title: 'Chart',
+    subtitle: 'Number of users and goal to be reached!'
 }
 
 const baseUrl = 'http://localhost:3001/users'

@@ -1,3 +1,14 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "Joaquim Pontes",
+      "email": "joaquim@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Bruno Castelo Branco Baltazar Reis",
+      "email": "brunocbbreis@gmail.com",
+      "id": 3
+    }
+  ]
 }

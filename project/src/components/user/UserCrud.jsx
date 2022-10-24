@@ -4,8 +4,8 @@ import axios from 'axios'
 
 const headerProps = {
     icon: 'users',
-    title: 'Usuários',
-    subtitle: 'Cadastro de usuários: Incluir, listar, alterar e excluir!'
+    title: 'Users',
+    subtitle: 'User registration: Create, read, update and delete!'
 }
 
 const baseUrl = 'http://localhost:3001/users'
@@ -57,11 +57,11 @@ export default class UserCrud extends Component{
                 <div className="row">
                     <div className="col-12 col-md-6">
                         <div className="form-group">
-                            <label>Nome</label>
+                            <label>Name</label>
                             <input type="text" className="form-control" 
                             name='name' value= {this.state.user.name}
                             onChange= {e => this.updateField(e)} 
-                            placeholder= 'Digite o nome...' />
+                            placeholder= 'Enter username...' />
                         </div>
                     </div>
                     <div className="col-12 col-md-6">
@@ -70,7 +70,7 @@ export default class UserCrud extends Component{
                             <input type="text" className="form-control" 
                             name='email' value= {this.state.user.email}
                             onChange= {e => this.updateField(e)} 
-                            placeholder= 'Digite o e-mail...' />
+                            placeholder= 'Enter user e-mail...' />
                         </div>
                     </div>
                 </div>
@@ -79,10 +79,10 @@ export default class UserCrud extends Component{
                 <div className="row">
                     <div className='col-12 d-flex justify-content-end'>
                         <button className='btn btn-primary' onClick={e => this.save(e)}>
-                            Salvar
+                            Save
                         </button>
                         <button className='btn btn-secondary ml-2' onClick={e => this.clear(e)}>
-                            Cancelar
+                            Cancel
                         </button>
                     </div>
 
@@ -108,9 +108,9 @@ export default class UserCrud extends Component{
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nome</th>
+                        <th>Name</th>
                         <th>E-mail</th>
-                        <th>Ações</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
